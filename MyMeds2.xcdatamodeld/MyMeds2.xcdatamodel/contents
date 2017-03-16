@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Med" representedClassName=".Med" syncable="YES" codeGenerationType="class">
+        <attribute name="brandName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genericName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="isCurrentlyTaking" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pillDosage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pillsPerBottle" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pricePerBottle" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="relMyDosage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MyDosage" inverseName="toMed" inverseEntity="MyDosage" syncable="YES"/>
+        <relationship name="relSort" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sort" inverseName="toMed" inverseEntity="Sort" syncable="YES"/>
+        <relationship name="relWebSite" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WebSite" inverseName="relMed" inverseEntity="WebSite" syncable="YES"/>
+    </entity>
+    <entity name="MyDosage" representedClassName=".MyDosage" syncable="YES" codeGenerationType="class">
+        <attribute name="amountToTake" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeToTake" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toMed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Med" inverseName="relMyDosage" inverseEntity="Med" syncable="YES"/>
+    </entity>
+    <entity name="Sort" representedClassName=".Sort" syncable="YES" codeGenerationType="class">
+        <attribute name="defaultSort" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fillBoxesSort" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeSort" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toMed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Med" inverseName="relSort" inverseEntity="Med" syncable="YES"/>
+    </entity>
+    <entity name="WebSite" representedClassName=".WebSite" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relMed" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Med" inverseName="relWebSite" inverseEntity="Med" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Med" positionX="-54" positionY="-9" width="128" height="210"/>
+        <element name="MyDosage" positionX="-36" positionY="63" width="128" height="90"/>
+        <element name="Sort" positionX="-18" positionY="72" width="128" height="105"/>
+        <element name="WebSite" positionX="0" positionY="81" width="128" height="90"/>
+    </elements>
+</model>

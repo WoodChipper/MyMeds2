@@ -1,0 +1,103 @@
+{
+    "med": [{
+            "generic": "ASPIRIN",
+            "brand": "Baby Aspirin",
+            "isCurrentlyTaking": true,
+            "pillsPerBottle": 36,
+            "pricePerBottle": 0.0,
+            "pillDosage": "81 mg",
+            "notes": "Your doctor may direct you to take a low dose of aspirin to prevent blood clots. This effect reduces the risk of stroke and heart attack. If you have recently had surgery on clogged arteries (such as bypass surgery, carotid endarterectomy, coronary stent), your doctor may direct you to use aspirin in low doses as a 'blood thinner' to prevent blood clots.",
+            "image": "aspirin.jpg",
+            "myDosage": [{
+                         "amount": 1,
+                         "when": "Morning"
+                         }],
+            "webSite": [{
+                        "webSiteURL": "http://www.webmd.com/drugs/2/drug-1082-3/aspirin-oral/aspirin---oral/details",
+                        "webSiteDesc": "WebMD"
+                        }, {
+                        "webSiteURL": "https://www.drugs.com/aspirin.html",
+                        "webSiteDesc": "Drugs.com"
+                        }],
+            "sort": [{
+                     "default": 1,
+                     "fillBoxes": 1
+                     }]
+            }, {
+            "generic": "METOPROLOL TARTRATE",
+            "brand": "Lopressor",
+            "isCurrentlyTaking": false,
+            "pillsPerBottle": 90,
+            "pricePerBottle": 0.0,
+            "pillDosage": "25 mg",
+            "notes": "Metoprolol belongs to a class of drugs known as beta blockers. It works by blocking the action of certain natural chemicals in your body, such as epinephrine, on the heart and blood vessels. This effect lowers the heart rate, blood pressure, and strain on the heart.",
+            "image": "metoprolol.jpg",
+            "myDosage": [{
+                         "amount": 0.5,
+                         "when": "Morning"
+                         }, {
+                         "amount": 0.5,
+                         "when": "Evening"
+                         }],
+            "webSite": [{
+                        "webSiteURL": "https://en.wikipedia.org/wiki/Spironolactone",
+                        "webSiteDesc": "Wikipedia"
+                        }, {
+                        "webSiteURL": "http://www.webmd.com/drugs/2/drug-11207/metoprolol-tartrate-oral/details",
+                        "webSiteDesc": "WebMD"
+                        }],
+            "sort": [{
+                     "default": 4,
+                     "fillBoxes": 4
+                     }]
+            
+            }, {
+            "generic": "PRASUGREL HCL",
+            "brand": "Effient",
+            "isCurrentlyTaking": true,
+            "pillsPerBottle": 30,
+            "pricePerBottle": 0.0,
+            "pillDosage": "10 mg",
+            "notes": "Effient (prasugrel) helps to prevent platelets in your blood from sticking together and forming a blood clot. An unwanted blood clot can occur with certain heart or blood vessel conditions. Effient is used to prevent blood clots in people with acute coronary syndrome who are undergoing a procedure after a recent heart attack or stroke, and in people with certain disorders of the heart or blood vessels.",
+            "image": "effient.jpg",
+            "myDosage": [{
+                         "amount": 1,
+                         "when": "Morning"
+                         }],
+            "webSite": [{
+                        "webSiteURL": "http://www.webmd.com/drugs/2/drug-152682/effient-oral/details",
+                        "webSiteDesc": "WebMD"
+                        }, {
+                        "webSiteURL": "https://www.drugs.com/losartan.html",
+                        "webSiteDesc": "Drugs.com"
+                        }],
+            "sort": [{
+                     "default": 2,
+                     "fillBoxes": 2
+                     }]
+            }, {
+            "generic": "SPIRONOLACTONE",
+            "brand": "Aldactone (TL 216)",
+            "isCurrentlyTaking": true,
+            "pillsPerBottle": 15,
+            "pricePerBottle": 0.0,
+            "pillDosage": "25 mg",
+            "notes": "A medication that is primarily used to treat fluid build-up due to heart failure, liver scarring, or kidney disease. It is also used to treat swelling (edema) caused by certain conditions (such as heart failure, liver disease) by removing excess fluid and improving symptoms such as breathing problems. This medication is also used to treat low potassium levels and conditions in which the body is making too much of a natural chemical (aldosterone). Spironolactone is known as a 'water pill' (potassium-sparing diuretic).",
+            "image": "spironolactone.jpg",
+            "myDosage": [{
+                         "amount": 0.5,
+                         "when": "Morning"
+                         }],
+            "webSite": [{
+                        "webSiteURL": "http://www.webmd.com/drugs/2/drug-6288/spironolactone-oral/details",
+                        "webSiteDesc": "WebMD"
+                        }, {
+                        "webSiteURL": "https://www.drugs.com/imprints/tl-216-22084.html",
+                        "webSiteDesc": "Drugs.com"
+                        }],
+            "sort": [{
+                     "default": 3,
+                     "fillBoxes": 3
+                     }]
+            }]
+}
